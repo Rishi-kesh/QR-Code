@@ -1,0 +1,90 @@
+<div class="qrcodeImage">
+  <qrcode
+    #parent
+    [qrdata]="'https://devfinity.bizvue.io/time-entry-new'"
+    [allowEmptyString]="true"
+     [colorDark]="green"
+    [colorLight]="'#ffffff'"
+    [elementType]="'canvas'"
+    [imageSrc]="'./assets/rr-logo.svg'"
+    [imageHeight]="40"
+    [imageWidth]="40"
+    [errorCorrectionLevel]="'H'"
+    [margin]="10"
+    [scale]="8"
+    [width]="200"
+  ></qrcode>
+</div>
+<div class="row">
+    <ngx-qrcode-styling
+    [template]="'ocean'"
+    [config]="config" 
+    [type]="'canvas'"
+    [shape]="'square'"
+    [width]="200"
+    [height]="200"
+    [margin]="5"
+    [data]="'https://devfinity.bizvue.io/time-entry-new'"
+    [image]="'./assets/rr-logo.svg'">
+  </ngx-qrcode-styling>
+    <ngx-qrcode-styling
+    [template]="'starbucks'"
+    [config]="config" 
+    [type]="'canvas'"
+    [shape]="'square'"
+    [width]="200"
+    [height]="200"
+    [margin]="5"
+    [data]="'https://devfinity.bizvue.io/time-entry-new'"
+    [image]="'./assets/rr-logo.svg'">
+    </ngx-qrcode-styling>
+
+    <ngx-qrcode-styling
+    [template]="'angular'"
+    [config]="config" 
+    [type]="'canvas'"
+    [shape]="'square'"
+    [width]="200"
+    [height]="200"
+    [margin]="5"
+    [data]="'https://devfinity.bizvue.io/time-entry-new'"
+    [image]="'./assets/rr-logo.svg'">
+    </ngx-qrcode-styling>
+
+    <ngx-qrcode-styling
+    [template]="'grape'"
+    [config]="configs" 
+    [type]="'canvas'"
+    [shape]="'square'"
+    [width]="200"
+    [height]="200"
+    [margin]="5"
+    [data]="'https://devfinity.bizvue.io/time-entry-new'"
+    [image]="'./assets/rr-logo.svg'">
+    </ngx-qrcode-styling>
+
+    
+    <ngx-qrcode-styling
+    [template]="'grape'"
+    [config]="configss" 
+    [type]="'canvas'"
+    [shape]="'square'"
+    [width]="200"
+    [height]="200"
+    [margin]="5"
+    [data]="'https://devfinity.bizvue.io/time-entry-new'"
+    [image]="'./assets/rr-logo.svg'">
+    </ngx-qrcode-styling>
+</div>
+
+
+<div class="downloadButton">
+  <button
+    
+    mat-raised-button
+    color="primary"
+    (click)="saveAsImage(parent)"
+  >
+    Download QR Code Image
+  </button>
+</div>
